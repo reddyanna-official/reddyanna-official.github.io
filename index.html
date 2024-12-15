@@ -9,6 +9,51 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="./nav.js"></script>
     <style>
+        .banner {
+            background: url('./bgimage.webp') no-repeat center center/cover;
+            position: relative;
+            color: #fff;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .banner h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        .banner p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        .btn-custom {
+            font-size: 1rem;
+            padding: 10px 20px;
+            margin: 10px 0;
+            background-color: #f9c03e;
+            color: #000;
+            border-radius: 5px;
+            text-transform: uppercase;
+        }
+        .btn-custom:hover {
+            background-color: #d49f2f;
+            color: #fff;
+        }
+        .player-images img {
+            width: 100%;
+            max-width: 500px;
+            margin: 10px auto;
+            display: block;
+        }
+        @media (max-width: 768px) {
+            .banner h1 {
+                font-size: 2rem;
+            }
+            .banner p {
+                font-size: 1rem;
+            }
+        }
         .bg-light {
             background-color: #00000000!important;
         }
@@ -76,6 +121,24 @@ footer p {
             </div>
         </div>
     </div> -->
+
+    <section class="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1>Welcome to Reddy Anna Book</h1>
+                    <p>India's No.1 sports ID provider since 2010.</p>
+                    <p>Do you want to open your cricket ID online but can't find a trustworthy betting platform? Here's a Reddy Anna Book for you. India's most famous and trusted cricket demo ID platform.</p>
+                    <a href="https://t.me/reddyannaofficialpage" class="btn btn-custom" target="_blank">Telegram Us</a>
+                    <a href="https://wa.me/+919111438458" class="btn btn-custom" target="_blank">WhatsApp Us</a>
+                </div>
+                <div class="col-md-6 player-images">
+                    <img src="./sideimage.png" alt="Players">
+                </div>
+            </div>
+        </div>
+    </section>
+
     <div class="row">
         <div class="col-lg-6">
             <a onclick="playAudio()" target="__blank" href="https://wa.me/+919111438458?text=Hi%20I%20Want%2020%%20Bonus%20ID"><img src="./IMG_6150.GIF" class="card-img-top" alt="..."></a>
