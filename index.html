@@ -89,6 +89,9 @@ footer p {
     margin-top: 10px;
     font-size: 14px;
 }
+.row{
+    --bs-gutter-x: 0rem;
+}
     </style>
     <!-- Meta Pixel Code -->
 <script>
@@ -130,10 +133,6 @@ footer p {
         function pauseAudio() {
             x.pause();
         }
-
-        setTimeout(function() {
-            window.location.href = "https://wa.me/+916202003782";
-        }, 5000);
     </script>
     <!-- <nav class="navbar bg-dark">
         <div class="container">
@@ -142,22 +141,36 @@ footer p {
             </a>
         </div>
     </nav> -->
-    <!-- <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <!-- Desktop Carousel -->
+    <div id="carouselDesktop" class="carousel slide d-none d-lg-block" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <a onclick="playAudio()" target="__blank" href="https://wa.me/+916202003782?text=Hi%20I%20Want%2020%%20Bonus%20ID"><img src="./banner.jpg" class="d-block w-100" alt="..."></a>
+                <a onclick="playAudio()" target="__blank" href="https://t.me/Themahaadevbook" onclick="trackFacebookEvent('TelegramClick')">
+                    <img src="./md1.png" class="d-block w-100" alt="Desktop Banner">
+                </a>
             </div>
         </div>
-    </div> -->
+    </div>
 
-    <section class="banner">
+    <!-- Mobile and Tablet Carousel -->
+    <div id="carouselMobile" class="carousel slide d-lg-none" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <a onclick="playAudio()" target="__blank" href="https://t.me/Themahaadevbook" onclick="trackFacebookEvent('TelegramClick')">
+                    <img src="./md2.png" class="d-block w-100" alt="Mobile Banner">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- <section class="banner">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
                     <h1>Welcome to Reddy Anna Book</h1>
                     <p>India's No.1 sports ID provider since 2010.</p>
                     <p>Do you want to open your cricket ID online but can't find a trustworthy betting platform? Here's a Reddy Anna Book for you. India's most famous and trusted cricket demo ID platform.</p>
-                    <a href="https://t.me/reddyannaofficialpage" onclick="trackFacebookEvent('TelegramClick')" class="btn btn-custom" target="_blank">Telegram Us</a>
+                    <a href="https://t.me/Themahaadevbook" onclick="trackFacebookEvent('TelegramClick')" class="btn btn-custom" target="_blank">Telegram Us</a>
                     <a href="https://wa.me/+916202003782" class="btn btn-custom" target="_blank" onclick="trackFacebookEvent('WhatsAppClick')">WhatsApp Us</a>
                 </div>
                 <div class="col-md-6 player-images">
@@ -165,7 +178,7 @@ footer p {
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <div class="row">
         <div class="col-lg-6">
@@ -183,7 +196,7 @@ footer p {
             <a href="https://wa.me/+916202003782" target="_blank" title="WhatsApp" onclick="trackFacebookEvent('WhatsAppClick')">
                 <i class="material-icons fa fa-whatsapp"></i>
             </a>
-            <a href="https://t.me/reddyannaofficialpage" onclick="trackFacebookEvent('TelegramClick')" target="_blank" title="Telegram">
+            <a href="https://t.me/Themahaadevbook" onclick="trackFacebookEvent('TelegramClick')" target="_blank" title="Telegram">
                 <span class="material-icons fa fa-telegram"></span>
             </a>
         </div>
